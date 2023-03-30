@@ -4,13 +4,12 @@ import numpy as np
 
 
 cancerdf = pd.read_csv(r'C:\Users\galmo\training\DS_cancer\CANCER_TABLE.csv')
-
+print
 # count_False = len(cancerdf[cancerdf[" cancer"] == False])
 # count_True = len(cancerdf[cancerdf[" cancer"] == True])
 # predicted_true = len(cancerdf[(cancerdf["diameter (cm)"] > 7) & (cancerdf[" cancer"] == True)])
 # predicted_truefalse = len(cancerdf[(cancerdf["diameter (cm)"] < 7) & (cancerdf[" cancer"] == True)])
 # predicted_False = len(cancerdf[(cancerdf["diameter (cm)"] > 7) & (cancerdf[" cancer"] == False)])
-# predicted_Falsetrue = len(cancerdf[(cancerdf["diameter (cm)"] < 7) & (cancerdf[" cancer"] == False)])
 # print(predicted_Falsetrue, predicted_truefalse)
 predicted_true = cancerdf[(cancerdf["diameter (cm)"] > 7) & (cancerdf[" cancer"] == True)]
 predicted_truefalse = cancerdf[(cancerdf["diameter (cm)"] < 7) & (cancerdf[" cancer"] == True)]
